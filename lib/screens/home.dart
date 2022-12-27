@@ -3,6 +3,7 @@ import 'package:bussiness_website/responsive.dart';
 import 'package:bussiness_website/widgets/menu/side_menu_section.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class HomePage extends StatelessWidget {
   HomePage({super.key, required this.mainSection});
   final Widget mainSection;
@@ -24,16 +25,14 @@ class HomePage extends StatelessWidget {
       drawer: const SideMenu(),
       body: SafeArea(
         child: Center(
-          child: Container(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (Responsive.isDesktop(context))
-                 Expanded(flex: 2, child: SideMenu()),
-                // if (Responsive.ismobileLarge(context)) SizedBox(width: 20.0,),
-                Expanded(flex: 7, child: mainSection)
-              ],
-            ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (Responsive.isDesktop(context))
+               const Expanded(flex: 2, child: SideMenu()),
+              // if (Responsive.ismobileLarge(context)) SizedBox(width: 20.0,),
+              Expanded(flex: 7, child: mainSection)
+            ],
           ),
         ),
       ),

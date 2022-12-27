@@ -41,6 +41,7 @@ class RecommanditionWidget extends StatelessWidget {
   }
 }
 
+// ignore: camel_case_types
 class buildRecommanditionCard extends StatelessWidget {
   const buildRecommanditionCard({super.key, required this.recommendation});
   final Recommendation recommendation;

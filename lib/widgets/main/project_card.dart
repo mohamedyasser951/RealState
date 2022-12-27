@@ -34,7 +34,7 @@ class ProjectCard extends StatelessWidget {
             Expanded(
               child: Text(
                 project.description!,
-                style: TextStyle(height: 1.5),
+                style:const TextStyle(height: 1.5),
               ),
             ),
             const SizedBox(
@@ -42,7 +42,7 @@ class ProjectCard extends StatelessWidget {
             ),
             TextButton(
                 onPressed: () {},
-                child: Text(
+                child:const Text(
                   "More info >",
                   style: TextStyle(color: kPrimaryColor),
                 ))

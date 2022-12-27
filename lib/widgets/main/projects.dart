@@ -1,4 +1,3 @@
-import 'package:bussiness_website/components/constants.dart';
 import 'package:bussiness_website/models/projects.dart';
 import 'package:bussiness_website/responsive.dart';
 import 'package:bussiness_website/widgets/main/project_card.dart';
@@ -9,7 +8,7 @@ class ProjectsWidget extends StatelessWidget {
   const ProjectsWidget({
     super.key,
   });
-  //final Project project;
+ 
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,7 +18,7 @@ class ProjectsWidget extends StatelessWidget {
           "Our Projects",
           style: Theme.of(context).textTheme.headline6,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         Responsive(

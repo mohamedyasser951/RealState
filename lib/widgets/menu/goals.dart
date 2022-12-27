@@ -1,8 +1,8 @@
 import 'package:bussiness_website/components/constants.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Goals extends StatelessWidget {
@@ -40,7 +40,7 @@ Widget buildGoals({required String text}) => Padding(
   
       SvgPicture.asset("assets/icons/check.svg"),
   
-      SizedBox(width: kDefaultPadding/2,),
+      const SizedBox(width: kDefaultPadding/2,),
   
       Text(text,)
   

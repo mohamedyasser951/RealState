@@ -15,19 +15,19 @@ class Logo extends StatelessWidget {
           
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Spacer(),
-            Image(image: AssetImage("assets/images/logo.png"),width: 100,),
-            Spacer(),
+            const Spacer(),
+           const Image(image: AssetImage("assets/images/logo.png"),width: 100,),
+            const Spacer(),
             Text(
               "Real Estate",
               style: Theme.of(context).textTheme.subtitle2,
             ),
-            Text(
+           const Text(
               "Modern Home with \n greate interior design",
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w200,height: 1.5),
             ),
-            Spacer(flex: 2,),
+            const Spacer(flex: 2,),
           ],
         ),
       ),

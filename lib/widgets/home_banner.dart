@@ -33,12 +33,12 @@ class HomeBanner extends StatelessWidget {
                   ),
                   ElevatedButton(
                       style: TextButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
+                        padding:const EdgeInsets.symmetric(
                             horizontal: 50, vertical: 20.0),
                         backgroundColor: kPrimaryColor,
                       ),
                       onPressed: () {},
-                      child: Text(
+                      child:const Text(
                         "Contact US",
                         style: TextStyle(color: kDarkColor),
                       ))

@@ -53,7 +53,7 @@ class SideMenu extends StatelessWidget {
                      const EdgeInsets.symmetric(vertical: 40.0, horizontal: 10.0),
                   child: Row(
                     children: [
-                      Spacer(),
+                    const  Spacer(),
 
                       IconButton(
                         
@@ -73,7 +73,7 @@ class SideMenu extends StatelessWidget {
                         onPressed: () {},
                         icon: SvgPicture.asset("assets/icons/dribble.svg"),
                       ),
-                      Spacer(),
+                     const Spacer(),
                     ],
                   ),
                 ),
